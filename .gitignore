@@ -1,0 +1,65 @@
+\# git-ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+*~
+*.class
+
+#Eclipse specific entries
+Debug/*
+Release/*
+.classpath
+.settings
+.project
+.factorypath
+bin
+bld
+.metadata/
+
+#IntelliJ IDEA
+.idea/
+*.iml
+
+src/server/data/*
+src/server/.settings/*
+help/*
+devlib
+class\ diagrams/*
+archive
+
+#just a place to redirect server output
+server.io
+
+#InstallAnywhere stuff
+Install
+buildlog.xml
+ifmlocales*
+ifmBuild.iap_xml
+ifmBtmp*
+ottoBuild.iap_xml
+otto_Build_Output/
+ottolocales_CFM/
+
+# maven stuff
+target
+/eclipse
+/ibm-ofm
+
+# RPX stuff
+default.rpxconfig
+/target
+
+# shade plugin stuff
+external-dependencies/dependency-reduced-pom.xml
+intermediate_crawler_data/**/**
+src/crawler/log/**
+results/**/**
+src/crawler/resources/rebel.xml
+crawlers_data/**/**
+crawlers_data_test/**/**
+out/**/*
+rest/log/*
+classes/**/*
+log/**/*
